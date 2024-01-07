@@ -34,7 +34,7 @@
 <body>
 
     <div class="container-fluid p-0">
-        <a href="/" style="position: absolute; right:20px; top:20px;z-index: 999;"><img src="logo.png" alt="logo" width="300"></a>
+        <a href="/" class="toplink" style="position: absolute; right:20px; top:20px;z-index: 999;"><img src="logo.png" alt="logo" width="300"></a>
         <div class="carousel-top">
             <div class="carouselbox">
                 <img src="slide1.jpg" class="d-block w-100" alt="slider">
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <section class="header3 cid-rmLdXTWFKW" id="header03-s">
+    <section class="header3 cid-rmLdXTWFKW" id="header03-s" style="padding-top: 30px!important;">
 
 
 
@@ -54,8 +54,7 @@
         <div class="container" id="services">
             <div class="row justify-content-md-center">
                 <div class="col-md-12 align-left">
-                    <h3 class="mbr-section-subtitle mbr-fonts-style display-4">MAGIC EXPERT</h3>
-                    <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
+                     <h2 class="mbr-section-title pb-2 mbr-fonts-style display-2">
                         Sister Aasiya Maseeh - Services</h2>
                     <p class="mbr-text pb-2 mbr-light mbr-fonts-style display-7">We cover a big variety of Istikhara
                         services & Master Of Black Magic</p>
@@ -716,7 +715,14 @@
         .cid-rmLeolfVbR .carousel-controls a.carousel-control-prev span{
             transform: rotate(180deg);
         }
-    </style>
+        @media (max-width:668px){
+            .slick-slider{padding-top: 100px; background: #000000;}
+            .toplink{ position: absolute;top:0!important;left:0!important;right:inherit!important;width: 100%; background: #000000; text-align: center;}
+            .toplink img{max-width: 65%; padding:20px}
+            .slick-arrow.slick-next,.slick-arrow.slick-prev{top: 60%;}
+
+
+        }    </style>
 </body>
 
 </html>
