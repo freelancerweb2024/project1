@@ -27,6 +27,34 @@
     <link rel="stylesheet" href="https://mobirise.com/extensions/tastem4/assets/mobirise/css/mbr-additional.css"
         type="text/css">
 
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482794856"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11482794856');
+</script>
+
+<!-- Event snippet for kala jadu conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11482794856/T2tACJO0o58ZEOiWtuMq',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+    
+
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
